@@ -1,10 +1,9 @@
 import styles from "./page.module.css";
-import Author from "../src/components/author";
 
-export default function Home() {
+export default function Activities() {
   return (
     <div className={styles.page}>
-      <Author />
+        Atividades
     </div>
   );
 }
