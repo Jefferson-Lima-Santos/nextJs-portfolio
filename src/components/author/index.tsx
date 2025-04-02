@@ -15,10 +15,6 @@ export const Author = () => {
     const theme = useTheme();
     const lgUp = useMediaQuery(theme.breakpoints.up('lg'));
     const mdDown = useMediaQuery(theme.breakpoints.down('md'));
-    console.log('lgUp')
-    console.log(lgUp)
-    console.log('mdDown')
-    console.log(mdDown)
     return (
         <Box
             sx={{
