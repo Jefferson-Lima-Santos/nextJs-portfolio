@@ -13,8 +13,6 @@ type Language = 'en' | 'ptBR';
 
 const languages: Record<Language, string> = {
   en: '/assets/flags/flag-uk.svg',
-  // de: '/assets/flags/flag-de.svg',
-  // es: '/assets/flags/flag-es.svg',
   ptBR: '/assets/flags/flag-pt-br.svg'
 };
 
