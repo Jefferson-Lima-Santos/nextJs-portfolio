@@ -155,7 +155,7 @@ export const createComponents = ({ palette }: Config): Components => {
         }
       }
     },
-    // @ts-expect-error
+    // @ts-expect-error because of the type error
     MuiTimelineConnector: {
       styleOverrides: {
         root: {
