@@ -13,11 +13,11 @@ const NAV_ITENS: { label: "home" | "projects" | "activities"; href: string }[] =
     },
     {
         label: "projects",
-        href: "/projetos"
+        href: "/projects"
     },
     {
         label: "activities",
-        href: "/atividades"
+        href: "/activities"
     }
 ]
 
