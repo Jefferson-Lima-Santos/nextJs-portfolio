@@ -36,6 +36,7 @@ const deleteSettings = (): void => {
   }
 };
 
+// @typescript-eslint/no-explicit-any
 const storeSettings = (value: Record<string, any>): void => {
   try {
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify(value));
