@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Typography, useTheme } from "@mui/material";
 import Link from "next/link";
 import {tokens} from "@/src/locales/tokens";
 import { useTranslation } from "react-i18next";
@@ -9,6 +9,7 @@ type NavItemProps = {
 }
 
 export const NavItem = ({label, href}: NavItemProps) => {
+    const theme = useTheme();
     const { t } = useTranslation();
     return (
         <Link 
@@ -27,7 +28,10 @@ export const NavItem = ({label, href}: NavItemProps) => {
                     marginX: 1,
                     "& span": {
                         color: "#2DCC70",
-                    }
+                    },
+                    "&:hover": {
+                        color: theme.palette.primary.main,
+                    },
                 }}
             >
                 <span># </span>
