@@ -14,6 +14,7 @@ export const tokens = {
     adaptability: 'common.adaptability',
     creativity: 'common.creativity',
     criticalThinking: 'common.criticalThinking',
+    contactMe: 'common.contactMe',
   },
   author: {
     description: 'author.description',

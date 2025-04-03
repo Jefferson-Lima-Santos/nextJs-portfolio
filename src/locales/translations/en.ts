@@ -15,6 +15,7 @@ export const en = {
   [tokens.common.adaptability]: 'Adaptability',
   [tokens.common.creativity]: 'Creativity',
   [tokens.common.criticalThinking]: 'Critical Thinking',
+  [tokens.common.contactMe]: 'Contact Me',
   [tokens.author.description]: '<p style="color: gray;">I am a fullstack developer with experience in JavaScript, TypeScript and C#. With over <span style="color: white">3 years of experience</span> in web development, front-end and back-end (With a focus on FrontEnd). I am always looking to learn new technologies and improve my skills.</p>',
   [tokens.page.notAuthorized.title]: '401: Authorization required',
   [tokens.page.notAuthorized.subtitle]: 'You either tried some shady route or you came here by mistake. Whichever it is, try using the navigation.',

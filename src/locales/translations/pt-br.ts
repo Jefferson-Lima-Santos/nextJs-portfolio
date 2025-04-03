@@ -15,6 +15,7 @@ export const ptBR = {
   [tokens.common.adaptability]: 'Adaptabilidade',
   [tokens.common.creativity]: 'Criatividade',
   [tokens.common.criticalThinking]: 'Pensamento crítico',
+  [tokens.common.contactMe]: 'Entre em contato comigo',
   [tokens.author.description]: '<p style="color: gray;">Sou um desenvolvedor fullstack com experiência em JavaScript, TypeScript e C#. Com mais de <span style="color: white">3 anos de experiência</span> em desenvolvimento web, front-end e back-end(Com foco no FrontEnd). Estou sempre buscando aprender novas tecnologias e melhorar minhas habilidades.</p>',
   [tokens.page.notAuthorized.title]: '401: Autorização necessária',
   [tokens.page.notAuthorized.subtitle]: 'Você tentou algum caminho obscuro ou veio aqui por engano. Seja o que for, tente usar a navegação.',
