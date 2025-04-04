@@ -192,13 +192,13 @@ export const Author = () => {
                         </Stack>
                     </Stack>
                     <Stack
-                        direction="row"
-                        alignItems="center"
+                        alignItems="start"
                         sx={{
                             flex: 1,
                             marginTop: "2rem !important",
                             marginLeft: "1rem !important",
                             gap: "1rem",
+                            flexDirection: mdDown ? "column" : "row",
                         }}
                     >
                         <Button
@@ -211,56 +211,65 @@ export const Author = () => {
                                     backgroundColor: theme.palette.primary.dark,
                                 },
                             }}
-                            href="/#contact"
-                            target="_blank"
+                            href="#contact"
+                            target="_self"
                             rel="noopener noreferrer"
                             endIcon={<ArrowForward />}
                             size="large"
                         >
                             {t(tokens.common.contactMe)}
                         </Button>
-                        <IconButton
-                            href={authorInfo.linkedin}
-                            target="_blank"
-                            rel="noopener noreferrer"
+                        <Stack
+                            direction="row"
+                            spacing={2}
                             sx={{
-                                marginLeft: "1rem",
-                                color: theme.palette.primary.main,
-                                "&:hover": {
-                                    color: theme.palette.primary.dark,
-                                },
+                                marginLeft: "1rem !important",
+                                alignItems: "center",
                             }}
                         >
-                            <LinkedIn />
-                        </IconButton>
-                        <IconButton
-                            href={authorInfo.github}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            sx={{
-                                marginLeft: "1rem",
-                                color: theme.palette.primary.main,
-                                "&:hover": {
-                                    color: theme.palette.primary.dark,
-                                },
-                            }}
-                        >
-                            <GitHub />
-                        </IconButton>
-                        <IconButton
-                            href={`https://api.whatsapp.com/send?phone=55${authorInfo.whatsapp}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            sx={{
-                                marginLeft: "1rem",
-                                color: theme.palette.primary.main,
-                                "&:hover": {
-                                    color: theme.palette.primary.dark,
-                                },
-                            }}
-                        >
-                            <WhatsApp />
-                        </IconButton>
+                            <IconButton
+                                href={authorInfo.linkedin}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                sx={{
+                                    marginLeft: "1rem",
+                                    color: theme.palette.primary.main,
+                                    "&:hover": {
+                                        color: theme.palette.primary.dark,
+                                    },
+                                }}
+                            >
+                                <LinkedIn />
+                            </IconButton>
+                            <IconButton
+                                href={authorInfo.github}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                sx={{
+                                    marginLeft: "1rem",
+                                    color: theme.palette.primary.main,
+                                    "&:hover": {
+                                        color: theme.palette.primary.dark,
+                                    },
+                                }}
+                            >
+                                <GitHub />
+                            </IconButton>
+                            <IconButton
+                                href={`https://api.whatsapp.com/send?phone=55${authorInfo.whatsapp}`}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                sx={{
+                                    marginLeft: "1rem",
+                                    color: theme.palette.primary.main,
+                                    "&:hover": {
+                                        color: theme.palette.primary.dark,
+                                    },
+                                }}
+                            >
+                                <WhatsApp />
+                            </IconButton>
+                        </Stack>
                     </Stack>
                 </motion.div>
             </Box>
