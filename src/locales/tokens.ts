@@ -8,6 +8,7 @@ export const tokens = {
     technologyEnthusiast: 'common.technologyEnthusiast',
     softSkills: 'common.softSkills',
     hardSkills: 'common.hardSkills',
+    workSectionDescription: 'common.workSectionDescription',
     communication: 'common.communication',
     teamWork: 'common.teamWork',
     problemSolving: 'common.problemSolving',
@@ -36,7 +37,8 @@ export const tokens = {
     }
   },
   nav: {
-    academy: 'nav.academy',
-    account: 'nav.account',
+    home: 'nav.home',
+    projects: 'nav.projects',
+    activities: 'nav.activities',
   }
 };
