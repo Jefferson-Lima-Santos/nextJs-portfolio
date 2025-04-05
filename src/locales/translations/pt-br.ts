@@ -23,9 +23,12 @@ export const ptBR = {
   [tokens.nav.home]: 'Início',
   [tokens.nav.projects]: 'Projetos',
   [tokens.nav.activities]: 'Atividades',
+  [tokens.sections.workSectionTitle]: 'Experiência Profissional',
+  [tokens.sections.workSectionSubtitle]: 'experiências',
   [tokens.layout.language]: 'Idioma',
   [tokens.layout.notifications]: 'Notificações',
   [tokens.layout.topNav.home]: 'Início',
   [tokens.layout.topNav.projects]: 'Projetos',
   [tokens.layout.topNav.activities]: 'Atividades',
+  [tokens.layout.topNav.carrer]: 'Carreira',
 };

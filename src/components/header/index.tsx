@@ -10,14 +10,14 @@ import { Box, useTheme, IconButton, Menu, MenuItem, ListItemText, ListItemIcon }
 import { LanguageSwitch } from "../language-switch";
 import { MouseEvent, useState } from "react";
 
-const NAV_ITENS: { label: "home" | "projects" | "activities"; href: string }[] = [
+const NAV_ITENS: { label: "home" | "carrer" | "projects" | "activities"; href: string }[] = [
     {
         label: "home",
-        href: "/",
+        href: "/#author",
     },
     {
-        label: "projects",
-        href: "/projects",
+        label: "carrer",
+        href: "/#work-experience",
     },
     {
         label: "activities",
@@ -43,14 +43,16 @@ export const Header = () => {
                 sx={{
                     display: "flex",
                     padding: "1rem",
+                    maxWidth: "1400px",
+                    width: "100%",
                 }}
             >
                 <Link href="/">
                     <Image
                         src="/images/JS-Logo.jpg"
                         alt="logo JS"
-                        width={58}
-                        height={49}
+                        width={80}
+                        height={60}
                     />
                 </Link>
                 {mobileMode ? (

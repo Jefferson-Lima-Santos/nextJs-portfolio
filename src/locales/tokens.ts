@@ -17,6 +17,10 @@ export const tokens = {
     criticalThinking: 'common.criticalThinking',
     contactMe: 'common.contactMe',
   },
+  sections: {
+    workSectionTitle: 'sections.workSectionTitle',
+    workSectionSubtitle: 'sections.workSectionSubtitle',
+  },
   author: {
     description: 'author.description',
     name: 'author.name',
@@ -34,6 +38,7 @@ export const tokens = {
       home: 'layout.topNav.home',
       projects: 'layout.topNav.projects',
       activities: 'layout.topNav.activities',
+      carrer: 'nav.carrer',
     }
   },
   nav: {

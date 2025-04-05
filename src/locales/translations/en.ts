@@ -23,9 +23,12 @@ export const en = {
   [tokens.nav.home]: 'Home',
   [tokens.nav.projects]: 'Projects',
   [tokens.nav.activities]: 'Activities',
+  [tokens.sections.workSectionTitle]: 'Work Experience',
+  [tokens.sections.workSectionSubtitle]: 'experiences',
   [tokens.layout.language]: 'Language',
   [tokens.layout.notifications]: 'Notifications',
   [tokens.layout.topNav.home]: 'Home',
   [tokens.layout.topNav.projects]: 'Projects',
   [tokens.layout.topNav.activities]: 'Activities',
+  [tokens.layout.topNav.carrer]: 'Career',
 };
