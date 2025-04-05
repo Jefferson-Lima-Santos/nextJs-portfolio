@@ -8,6 +8,7 @@ export const tokens = {
     technologyEnthusiast: 'common.technologyEnthusiast',
     softSkills: 'common.softSkills',
     hardSkills: 'common.hardSkills',
+    workSectionDescription: 'common.workSectionDescription',
     communication: 'common.communication',
     teamWork: 'common.teamWork',
     problemSolving: 'common.problemSolving',
@@ -15,6 +16,10 @@ export const tokens = {
     creativity: 'common.creativity',
     criticalThinking: 'common.criticalThinking',
     contactMe: 'common.contactMe',
+  },
+  sections: {
+    workSectionTitle: 'sections.workSectionTitle',
+    workSectionSubtitle: 'sections.workSectionSubtitle',
   },
   author: {
     description: 'author.description',
@@ -33,10 +38,12 @@ export const tokens = {
       home: 'layout.topNav.home',
       projects: 'layout.topNav.projects',
       activities: 'layout.topNav.activities',
+      carrer: 'nav.carrer',
     }
   },
   nav: {
-    academy: 'nav.academy',
-    account: 'nav.account',
+    home: 'nav.home',
+    projects: 'nav.projects',
+    activities: 'nav.activities',
   }
 };

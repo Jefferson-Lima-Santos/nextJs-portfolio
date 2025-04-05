@@ -1,4 +1,4 @@
-export interface ProjectProps {
+export type ProjectProps = {
     image: string;
     name: string;
     date: string;
