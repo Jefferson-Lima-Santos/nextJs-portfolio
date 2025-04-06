@@ -8,6 +8,9 @@ import { createTheme } from '@/src/theme';
 import { SettingsConsumer, SettingsProvider } from "@/src/contexts/settings";
 import '@/src/locales/i18n';
 import Footer from "@/src/components/footer";
+import { ApolloProvider } from "@apollo/client";
+import create from "@/src/libs";
+import { Toaster } from "@/src/components/toaster";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -30,39 +33,43 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const apolloClient = create();
   return (
     <html lang="pt-BR">
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width" />
       <meta name="description" content="Esse site é um portfólio." />
-      <SettingsProvider>
-        <SettingsConsumer>
-          {(settings) => {
-            // Prevent theme flicker when restoring custom settings from browser storage
-            if (!settings.isInitialized) {
-              // return null;
-            }
+      <ApolloProvider client={apolloClient}>
+        <SettingsProvider>
+          <SettingsConsumer>
+            {(settings) => {
+              // Prevent theme flicker when restoring custom settings from browser storage
+              if (!settings.isInitialized) {
+                // return null;
+              }
 
-            const theme = createTheme({
-              colorPreset: settings.colorPreset,
-              contrast: settings.contrast,
-              direction: settings.direction,
-              paletteMode: settings.paletteMode,
-              responsiveFontSizes: settings.responsiveFontSizes
-            });
+              const theme = createTheme({
+                colorPreset: settings.colorPreset,
+                contrast: settings.contrast,
+                direction: settings.direction,
+                paletteMode: settings.paletteMode,
+                responsiveFontSizes: settings.responsiveFontSizes
+              });
 
-            return (
-              <ThemeProvider theme={theme}>
-                <body className={`${geistSans.variable} ${geistMono.variable}`}>
-                  <Header />
-                  {children}
-                  <Footer />
-                </body>
-              </ThemeProvider>
-            );
-          }}
-        </SettingsConsumer>
-      </SettingsProvider>
+              return (
+                <ThemeProvider theme={theme}>
+                  <body className={`${geistSans.variable} ${geistMono.variable}`}>
+                    <Header />
+                    {children}
+                    <Footer />
+                    <Toaster />
+                  </body>
+                </ThemeProvider>
+              );
+            }}
+          </SettingsConsumer>
+        </SettingsProvider>
+      </ApolloProvider>
     </html >
   );
 }

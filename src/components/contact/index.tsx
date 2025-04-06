@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Button, Card, CardContent, CardHeader, Stack, TextField, Typography, useMediaQuery, useTheme } from "@mui/material";
+import { Box, Button, Card, CardContent, CardHeader, CircularProgress, Stack, TextField, useMediaQuery, useTheme } from "@mui/material";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import Lottie from "lottie-react";
@@ -8,6 +8,9 @@ import walkingDestination from "@/src/lottie-animations/destination-walking.json
 import { motion } from 'framer-motion';
 import { useTranslation } from "react-i18next";
 import { tokens } from "@/src/locales/tokens";
+import MUTATE_MESSAGE from "@/src/mutations/send-message";
+import { useMutation } from "@apollo/client";
+import toast from 'react-hot-toast';
 
 
 type FormValues = {
@@ -19,6 +22,7 @@ type FormValues = {
 
 export const Contact = () => {
     const theme = useTheme();
+    const [mutateMesssage, { loading }] = useMutation(MUTATE_MESSAGE);
     const isMobile = useMediaQuery(theme.breakpoints.down("md"));
     const { t } = useTranslation();
 
@@ -36,7 +40,27 @@ export const Contact = () => {
             message: Yup.string().required(t(tokens.required.message)),
         }),
         onSubmit: (values: FormValues) => {
-            // Handle form submission
+            const toastId = toast.loading(t(tokens.common.saving), { position: "top-right" });
+            mutateMesssage({
+                variables: {
+                    name: values.name,
+                    email: values.email,
+                    country: values.country,
+                    message: values.message,
+                },
+            }).then((response) => {
+                if (response.data) {
+                    toast.success(t(tokens.common.success), { id: toastId });
+                    formik.resetForm();
+                } else {
+                    toast.error(t(tokens.common.somethingWentWrong), { id: toastId });
+                }
+            }).catch((error) => {
+                console.error("Error sending message:", error);
+                toast.error(t(tokens.common.somethingWentWrong), { id: toastId });
+            }).finally(() => {
+                toast.dismiss(toastId);
+            });
         },
     });
 
@@ -182,6 +206,8 @@ export const Contact = () => {
                                                     backgroundColor: theme.palette.primary.dark,
                                                 },
                                             }}
+                                            disabled={loading}
+                                            startIcon={loading ? <CircularProgress size={24} /> : null}
                                         >
                                             {t(tokens.common.submit)}
                                         </Button>
