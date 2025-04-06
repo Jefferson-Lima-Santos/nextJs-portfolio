@@ -21,6 +21,9 @@ export const tokens = {
     country: 'common.country',
     message: 'common.message',
     submit: 'common.submit',
+    saving: 'common.saving',
+    success: 'common.success',
+    somethingWentWrong: 'common.somethingWentWrong',
   },
   invalid: {
     email: 'invalid.email',

@@ -6,7 +6,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import TagIcon from "@mui/icons-material/Tag";
 import MenuIcon from '@mui/icons-material/Menu';
 import MenuOpen from '@mui/icons-material/MenuOpen';
-import { Box, useTheme, IconButton, Menu, MenuItem, ListItemText, ListItemIcon, Typography } from "@mui/material";
+import { Box, useTheme, IconButton, Menu, MenuItem, ListItemText, ListItemIcon } from "@mui/material";
 import { LanguageSwitch } from "../language-switch";
 import { MouseEvent, useState } from "react";
 
