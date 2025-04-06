@@ -40,7 +40,6 @@ export const SectionTitle = ({
         style={{
             fontSize: '2rem',
             fontWeight: 500,
-            color: '#fff',
         }}
         {...animProps}
         transition={{ duration: 0.5, delay: 0.2 }}
