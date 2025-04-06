@@ -4,7 +4,7 @@ import {tokens} from "@/src/locales/tokens";
 import { useTranslation } from "react-i18next";
 
 type NavItemProps = {
-    label: "home" | "carrer" | "projects" | "activities";
+    label: "home" | "carrer" | "projects" | "activities" | "contact";
     href: string;
 }
 

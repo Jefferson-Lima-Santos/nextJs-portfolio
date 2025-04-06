@@ -7,6 +7,7 @@ import { ThemeProvider } from "@mui/material";
 import { createTheme } from '@/src/theme';
 import { SettingsConsumer, SettingsProvider } from "@/src/contexts/settings";
 import '@/src/locales/i18n';
+import Footer from "@/src/components/footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -55,6 +56,7 @@ export default function RootLayout({
                 <body className={`${geistSans.variable} ${geistMono.variable}`}>
                   <Header />
                   {children}
+                  <Footer />
                 </body>
               </ThemeProvider>
             );

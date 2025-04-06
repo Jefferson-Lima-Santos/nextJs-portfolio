@@ -14,7 +14,6 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  /* // adicionar um smooth quando o usuário for jogado para cima */
   scroll-behavior: smooth;
 }
 

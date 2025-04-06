@@ -16,6 +16,27 @@ export const tokens = {
     creativity: 'common.creativity',
     criticalThinking: 'common.criticalThinking',
     contactMe: 'common.contactMe',
+    name: 'common.name',
+    email: 'common.email',
+    country: 'common.country',
+    message: 'common.message',
+    submit: 'common.submit',
+  },
+  invalid: {
+    email: 'invalid.email',
+    name: 'invalid.name',
+    country: 'invalid.country',
+    message: 'invalid.message',
+  },
+  required: {
+    email: 'required.email',
+    name: 'required.name',
+    country: 'required.country',
+    message: 'required.message',
+  },
+  contact: {
+    title: 'contact.title',
+    subtitle: 'contact.subtitle',
   },
   sections: {
     workSectionTitle: 'sections.workSectionTitle',
@@ -39,6 +60,7 @@ export const tokens = {
       projects: 'layout.topNav.projects',
       activities: 'layout.topNav.activities',
       carrer: 'nav.carrer',
+      contact: 'nav.contact',
     }
   },
   nav: {
