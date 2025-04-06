@@ -25,7 +25,7 @@ export const en = {
   [tokens.common.saving]: 'Saving...',
   [tokens.common.success]: 'Success!',
   [tokens.common.somethingWentWrong]: 'Something went wrong. Please try again later.',
-  [tokens.author.description]: '<p style="color: gray;">I am a fullstack developer with experience in JavaScript, TypeScript and C#. With over <span style="color: white">3 years of experience</span> in web development, front-end and back-end (With a focus on FrontEnd). I am always looking to learn new technologies and improve my skills.</p>',
+  [tokens.author.description]: '<p style="color: gray;">I am a fullstack developer with experience in JavaScript, TypeScript and C#. With over <span style="color: black; font-weight: bold;">3 years of experience</span> in web development, front-end and back-end (With a focus on FrontEnd). I am always looking to learn new technologies and improve my skills.</p>',
   [tokens.page.notAuthorized.title]: '401: Authorization required',
   [tokens.page.notAuthorized.subtitle]: 'You either tried some shady route or you came here by mistake. Whichever it is, try using the navigation.',
   [tokens.nav.home]: 'Home',

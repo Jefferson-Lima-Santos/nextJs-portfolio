@@ -74,7 +74,7 @@ export const Contact = () => {
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "space-between",
-                    padding: "1rem",
+                    padding: isMobile ? "none" : "1rem",
                     position: "relative",
                     width: "100%",
                     minHeight: isMobile ? "none" : "700px",
@@ -108,7 +108,7 @@ export const Contact = () => {
                 <Box
                     sx={{
                         width: isMobile ? "100%" : "50%",
-                        padding: "1rem",
+                        padding: isMobile ? "none" : "1rem",
                         position: isMobile ? "relative" : "absolute",
                         right: 0,
                         minWidth: isMobile ? "100%" : "515px",

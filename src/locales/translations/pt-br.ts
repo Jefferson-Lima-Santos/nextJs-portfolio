@@ -25,7 +25,7 @@ export const ptBR = {
   [tokens.common.saving]: 'Salvando...',
   [tokens.common.success]: 'Sucesso!',
   [tokens.common.somethingWentWrong]: 'Algo deu errado. Tente novamente mais tarde.',
-  [tokens.author.description]: '<p style="color: gray;">Sou um desenvolvedor fullstack com experiência em JavaScript, TypeScript e C#. Com mais de <span style="color: white">3 anos de experiência</span> em desenvolvimento web, front-end e back-end(Com foco no FrontEnd). Estou sempre buscando aprender novas tecnologias e melhorar minhas habilidades.</p>',
+  [tokens.author.description]: '<p style="color: black;">Sou um desenvolvedor fullstack com experiência em JavaScript, TypeScript e C#. Com mais de <span style="font-weight: bold; color: black;">3 anos de experiência</span> em desenvolvimento web, front-end e back-end(Com foco no FrontEnd). Estou sempre buscando aprender novas tecnologias e melhorar minhas habilidades.</p>',
   [tokens.page.notAuthorized.title]: '401: Autorização necessária',
   [tokens.page.notAuthorized.subtitle]: 'Você tentou algum caminho obscuro ou veio aqui por engano. Seja o que for, tente usar a navegação.',
   [tokens.nav.home]: 'Início',
