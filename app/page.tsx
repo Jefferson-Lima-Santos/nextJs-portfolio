@@ -1,6 +1,7 @@
 import styles from "./page.module.css";
 import Author from "../src/components/author";
 import { WorkExperience } from "@/src/components/work-experience";
+import Contact from "@/src/components/contact";
 
 const experiences = [
   {
@@ -40,6 +41,7 @@ export default function Home() {
       <WorkExperience
         experiences={experiences}
       />
+      <Contact />
     </div>
   );
 }

@@ -32,5 +32,5 @@ export const authorInfo: AuthorInfo = {
     linkedin: "https://www.linkedin.com/in/jefferson-santos-348646207/",
     email: "jeffersonsantos.techdev@gmail.com",
     website: "https://jefferson-lima-santos.github.io/",
-    whatsapp: "55981156240"
+    whatsapp: "16981156240"
 }

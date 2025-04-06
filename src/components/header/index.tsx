@@ -6,11 +6,11 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import TagIcon from "@mui/icons-material/Tag";
 import MenuIcon from '@mui/icons-material/Menu';
 import MenuOpen from '@mui/icons-material/MenuOpen';
-import { Box, useTheme, IconButton, Menu, MenuItem, ListItemText, ListItemIcon } from "@mui/material";
+import { Box, useTheme, IconButton, Menu, MenuItem, ListItemText, ListItemIcon, Typography } from "@mui/material";
 import { LanguageSwitch } from "../language-switch";
 import { MouseEvent, useState } from "react";
 
-const NAV_ITENS: { label: "home" | "carrer" | "projects" | "activities"; href: string }[] = [
+const NAV_ITENS: { label: "home" | "carrer" | "projects" | "contact" | "activities"; href: string }[] = [
     {
         label: "home",
         href: "/#author",
@@ -20,8 +20,8 @@ const NAV_ITENS: { label: "home" | "carrer" | "projects" | "activities"; href: s
         href: "/#work-experience",
     },
     {
-        label: "activities",
-        href: "/activities",
+        label: "contact",
+        href: "/#contact",
     },
 ];
 
@@ -99,7 +99,7 @@ export const Header = () => {
                                     >
                                         <TagIcon />
                                     </ListItemIcon>
-                                    <ListItemText 
+                                    <ListItemText
                                         primary={item.label.toLocaleUpperCase()}
                                         slotProps={{
                                             root: {

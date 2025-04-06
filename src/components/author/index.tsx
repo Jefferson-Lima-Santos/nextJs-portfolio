@@ -37,7 +37,6 @@ export const Author = () => {
                     }}
                 >
                     <motion.div
-                        className="w-full lg:max-w-[530px]"
                         initial={{ opacity: 0, x: -100 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         exit={{ opacity: 0, x: -100 }}
