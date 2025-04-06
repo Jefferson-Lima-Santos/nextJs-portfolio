@@ -11,7 +11,7 @@ const experiences = [
     },
     companyName: "Grupo SEB",
     companyUrl: "https://www.linkedin.com/company/gruposeb",
-    startDate: "2022-02-01",
+    startDate: "2024-02-01",
     endDate: "",
     role: "Desenvolvedor Web",
     description: `Atuo como Desenvolvedor Web no time de Operações do Grupo SEB, focado na manutenção e evolução do principal produto da empresa. Trabalho com tecnologias como Next.js, React, TypeScript e GraphQL, com foco em performance e experiência do usuário. Também realizo tarefas no Back-End com .NET (C#), entregando soluções completas e colaborando com eficiência.`,
