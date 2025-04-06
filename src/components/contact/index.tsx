@@ -3,13 +3,13 @@
 import { Box, Button, Card, CardContent, CardHeader, CircularProgress, Stack, TextField, useMediaQuery, useTheme } from "@mui/material";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import Lottie from "lottie-react";
 import walkingDestination from "@/src/lottie-animations/destination-walking.json";
 import { motion } from 'framer-motion';
 import { useTranslation } from "react-i18next";
 import { tokens } from "@/src/locales/tokens";
 import MUTATE_MESSAGE from "@/src/mutations/send-message";
 import { useMutation } from "@apollo/client";
+import dynamic from "next/dynamic";
 import toast from 'react-hot-toast';
 
 
@@ -19,6 +19,9 @@ type FormValues = {
     country: string;
     message: string;
 };
+const LottieNoSSR = dynamic(() => import("lottie-react"), {
+    ssr: false,
+});
 
 export const Contact = () => {
     const theme = useTheme();
@@ -93,7 +96,7 @@ export const Contact = () => {
                                 alignItems: "center",
                             }}
                         >
-                            <Lottie
+                            <LottieNoSSR
                                 animationData={walkingDestination}
                                 loop={true}
                                 autoplay={true}
