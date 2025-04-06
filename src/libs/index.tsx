@@ -16,9 +16,9 @@ const create = () => {
   }
 
   const errorLink = onError(
-    ({ graphQLErrors, networkError, operation, forward }) => {
+    ({ graphQLErrors, networkError }) => {
       if (graphQLErrors) {
-        for (let err of graphQLErrors) {
+        for (const err of graphQLErrors) {
           switch (err?.extensions?.code) {
 
           }
