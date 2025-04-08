@@ -1,6 +1,16 @@
 export const tokens = {
   common: {
     languageChanged: 'common.languageChanged',
+    language: 'common.language',
+    selectLanguage: 'common.selectLanguage',
+    programLanguages: 'common.programLanguages',
+    selectProgramLanguages: 'common.selectProgramLanguages',
+    frameworks: 'common.frameworks',
+    selectFrameworks: 'common.selectFrameworks',
+    other: 'common.other',
+    selectOther: 'common.selectOther',
+    tech: 'common.tech',
+    selectTech: 'common.selectTech',
     greeting: 'common.greeting',
     mynameis: 'common.mynameis',
     webDeveloper: 'common.webDeveloper',
@@ -24,6 +34,7 @@ export const tokens = {
     saving: 'common.saving',
     success: 'common.success',
     somethingWentWrong: 'common.somethingWentWrong',
+    searchPlaceHolder: 'common.searchPlaceHolder',
   },
   invalid: {
     email: 'invalid.email',
@@ -44,6 +55,8 @@ export const tokens = {
   sections: {
     workSectionTitle: 'sections.workSectionTitle',
     workSectionSubtitle: 'sections.workSectionSubtitle',
+    projectsSectionTitle: 'sections.projectsSectionTitle',
+    projectsSectionSubtitle: 'sections.projectsSectionSubtitle',
   },
   author: {
     description: 'author.description',

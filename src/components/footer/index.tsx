@@ -30,6 +30,7 @@ const Footer = () => {
                 <IconButton
                     href={authorInfo.linkedin}
                     target="_blank"
+                    aria-label="LinkedIn"
                     rel="noopener noreferrer"
                     sx={{
                         color: theme.palette.text.secondary,
@@ -43,6 +44,7 @@ const Footer = () => {
                 <IconButton
                     href={authorInfo.github}
                     target="_blank"
+                    aria-label="GitHub"
                     rel="noopener noreferrer"
                     sx={{
                         color: theme.palette.text.secondary,

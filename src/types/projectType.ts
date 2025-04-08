@@ -1,7 +1,15 @@
-export type ProjectProps = {
+import { ReactElement } from "react";
+
+export type TechItem = {
+    name: string;
+    icon: ReactElement;
+}
+
+export type ProjectItemType = {
     image: string;
     name: string;
-    date: string;
-    techsUsed: string[];
-    url: string;
+    languagesUsed: TechItem[];
+    frameworksUsed: TechItem[];
+    techsUsed: TechItem[];
+    gitHubUrl: string;
 }

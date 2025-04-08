@@ -51,8 +51,8 @@ export const Header = () => {
                     <Image
                         src="/images/JS-Logo.jpg"
                         alt="logo JS"
-                        width={80}
-                        height={60}
+                        width={81}
+                        height={54}
                     />
                 </Link>
                 {mobileMode ? (

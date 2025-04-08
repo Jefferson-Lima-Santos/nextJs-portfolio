@@ -35,7 +35,10 @@ export default function RootLayout({
 }>) {
   const apolloClient = create();
   return (
-    <html lang="pt-BR">
+    <html 
+      lang="pt-BR"
+    >
+      <title>Portfólio</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width" />
       <meta name="description" content="Esse site é um portfólio." />

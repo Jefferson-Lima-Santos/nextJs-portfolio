@@ -24,7 +24,7 @@ export const Author = () => {
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "space-between",
-                    padding: "1rem",
+                    padding: mdDown ? "none" : "1rem",
                     width: "100%",
                     flexDirection: lgUp ? "row" : "column-reverse",
                 }}
@@ -144,12 +144,12 @@ export const Author = () => {
                                                 label={skill}
                                                 sx={{
                                                     margin: "0.5rem",
-                                                    backgroundColor: theme.palette.error.main,
+                                                    backgroundColor: theme.palette.primary.main,
                                                     color: theme.palette.background.paper,
                                                     fontWeight: 700,
                                                     cursor: "default",
                                                     "&:hover": {
-                                                        backgroundColor: theme.palette.error.dark,
+                                                        backgroundColor: theme.palette.primary.dark,
                                                     },
                                                 }}
                                             />
@@ -243,6 +243,7 @@ export const Author = () => {
                                 <IconButton
                                     href={authorInfo.linkedin}
                                     target="_blank"
+                                    aria-label="LinkedIn"
                                     rel="noopener noreferrer"
                                     sx={{
                                         marginLeft: "1rem",
@@ -257,6 +258,7 @@ export const Author = () => {
                                 <IconButton
                                     href={authorInfo.github}
                                     target="_blank"
+                                    aria-label="GitHub"
                                     rel="noopener noreferrer"
                                     sx={{
                                         marginLeft: "1rem",
@@ -271,6 +273,7 @@ export const Author = () => {
                                 <IconButton
                                     href={`https://api.whatsapp.com/send?phone=55${authorInfo.whatsapp}`}
                                     target="_blank"
+                                    aria-label="WhatsApp"
                                     rel="noopener noreferrer"
                                     sx={{
                                         marginLeft: "1rem",
@@ -306,9 +309,10 @@ export const Author = () => {
                     >
                         <Image
                             src="/images/Author-Square.png"
-                            alt="logo JS"
-                            width={1024}
-                            height={1024}
+                            alt="Author Image"
+                            width={mdDown ? 400 : 500}
+                            height={mdDown ? 400 : 500}
+                            priority
                             style={{
                                 borderRadius: "1rem",
                                 width: mdDown ? "400px" : "500px",
