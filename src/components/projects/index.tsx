@@ -29,7 +29,6 @@ type SelectedFilters = {
 export const Project: React.FC<ProjectProps> = ({ projects = [] }) => {
     const theme = useTheme();
     const { t } = useTranslation();
-    const mdDown = useMediaQuery(theme.breakpoints.down('md'));
     const smDown = useMediaQuery(theme.breakpoints.down('sm'));
     const [selectedFilters, setSelectedFilters] = React.useState<SelectedFilters>({
         languages: [],
