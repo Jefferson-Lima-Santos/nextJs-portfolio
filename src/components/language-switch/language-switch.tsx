@@ -7,7 +7,8 @@ import Tooltip from '@mui/material/Tooltip';
 import { usePopover } from '@/src/hooks/use-popover';
 
 import { LanguagePopover } from './language-popover';
-import {tokens} from "@/src/locales/tokens";
+import { tokens } from "@/src/locales/tokens";
+import Image from 'next/image';
 
 type Language = 'en' | 'ptBR';
 
@@ -37,7 +38,12 @@ export const LanguageSwitch: FC = () => {
               }
             }}
           >
-            <img src={flag} />
+            <Image
+              src={flag}
+              alt="language flag"
+              width={28}
+              height={20}
+            />
           </Box>
         </IconButton>
       </Tooltip>
