@@ -2,6 +2,15 @@ import styles from "./page.module.css";
 import Author from "../src/components/author";
 import { WorkExperience } from "@/src/components/work-experience";
 import Contact from "@/src/components/contact";
+import Project from "@/src/components/projects";
+import { FaReact } from "react-icons/fa";
+import { AiOutlineDotNet } from "react-icons/ai";
+import { SiTypescript, SiGraphql, SiI18Next, SiMui, SiRedux  } from "react-icons/si";
+import { RiNextjsLine } from "react-icons/ri";
+import { TbBrandFramerMotion, TbBrandCSharp } from "react-icons/tb";
+import { AiOutlineConsoleSql } from "react-icons/ai";
+import { TbSql } from "react-icons/tb";
+import { DiDotnet } from "react-icons/di";
 
 const experiences = [
   {
@@ -45,6 +54,121 @@ const experiences = [
   },
 ];
 
+const projects = [
+  {
+    name: "Portfolio",
+    image: "https://i.ibb.co/nMn8sDcb/Portfolio.png",
+    languagesUsed: [
+      {
+        name: "JavaScript",
+        icon: <FaReact />
+      }, 
+      {
+        name: "TypeScript",
+        icon: <SiTypescript />
+      }
+    ],
+    frameworksUsed: [
+      {
+        name: "Next.js",
+        icon: <RiNextjsLine />
+      }
+    ],
+    techsUsed: [
+      {
+        name: "React",
+        icon: <FaReact />
+      },
+      {
+        name: "Node.js",
+        icon: <RiNextjsLine />
+      },
+      {
+        name: "GraphQL -> ApolloClient",
+        icon: <SiGraphql />
+      },
+      {
+        name: "Internationalization -> i18next",
+        icon: <SiI18Next />
+      },
+      {
+        name: "Jotai",
+        icon: <SiRedux />
+      },
+      {
+        name: "MUI",
+        icon: <SiMui />
+      },
+      {
+        name: "Framer Motion",
+        icon: <TbBrandFramerMotion />
+      }
+    ],
+    gitHubUrl: "https://github.com/Jefferson-Lima-Santos/nextJs-portfolio"
+  },
+  {
+    name: ".NET API - For portfolio",
+    image: "https://i.ibb.co/nMn8sDcb/Portfolio.png",
+    languagesUsed: [
+      {
+        name: "C#",
+        icon: <TbBrandCSharp />
+      },
+      {
+        name: "SQL",
+        icon: <TbSql />
+      }
+    ],
+    frameworksUsed: [
+      {
+        name: ".NET",
+        icon: <AiOutlineDotNet />
+      }
+    ],
+    techsUsed: [
+      {
+        name: "Entity Framework",
+        icon: <DiDotnet />
+      },
+      {
+        name: "SQL Server",
+        icon: <AiOutlineConsoleSql />
+      },
+    ],
+    gitHubUrl: "https://github.com/Jefferson-Lima-Santos/nextJs-portfolio"
+  },
+  {
+    name: ".NET API - For portfolio",
+    image: "https://i.ibb.co/nMn8sDcb/Portfolio.png",
+    languagesUsed: [
+      {
+        name: "C#",
+        icon: <TbBrandCSharp />
+      },
+      {
+        name: "SQL",
+        icon: <TbSql />
+      }
+    ],
+    frameworksUsed: [
+      {
+        name: ".NET",
+        icon: <AiOutlineDotNet />
+      }
+    ],
+    techsUsed: [
+      {
+        name: "Entity Framework",
+        icon: <DiDotnet />
+      },
+      {
+        name: "SQL Server",
+        icon: <AiOutlineConsoleSql />
+      },
+    ],
+    gitHubUrl: "https://github.com/Jefferson-Lima-Santos/nextJs-portfolio"
+  }
+]
 
 export default function Home() {
   return (
@@ -52,6 +176,9 @@ export default function Home() {
       <Author />
       <WorkExperience
         experiences={experiences}
+      />
+      <Project
+        projects={projects}
       />
       <Contact />
     </div>

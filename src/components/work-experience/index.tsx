@@ -22,7 +22,7 @@ export const WorkExperience = ({ experiences }: WorkExperienceProps) => {
                     display: "flex",
                     alignItems: "flex-start",
                     justifyContent: "space-between",
-                    padding: "1rem",
+                    padding: mdDown ? "none" : "1rem",
                     width: "100%",
                     flexDirection: mdDown ? "column" : "row",
                 }}
