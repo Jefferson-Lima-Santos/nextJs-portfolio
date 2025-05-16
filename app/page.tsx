@@ -108,7 +108,7 @@ const projects = [
   },
   {
     name: ".NET API - For portfolio",
-    image: "https://i.ibb.co/nMn8sDcb/Portfolio.png",
+    image: "https://i.ibb.co/Q322pZmV/dotnetprotecjimage.png",
     languagesUsed: [
       {
         name: "C#",
@@ -135,38 +135,7 @@ const projects = [
         icon: <AiOutlineConsoleSql />
       },
     ],
-    gitHubUrl: "https://github.com/Jefferson-Lima-Santos/nextJs-portfolio"
-  },
-  {
-    name: ".NET API - For portfolio",
-    image: "https://i.ibb.co/nMn8sDcb/Portfolio.png",
-    languagesUsed: [
-      {
-        name: "C#",
-        icon: <TbBrandCSharp />
-      },
-      {
-        name: "SQL",
-        icon: <TbSql />
-      }
-    ],
-    frameworksUsed: [
-      {
-        name: ".NET",
-        icon: <AiOutlineDotNet />
-      }
-    ],
-    techsUsed: [
-      {
-        name: "Entity Framework",
-        icon: <DiDotnet />
-      },
-      {
-        name: "SQL Server",
-        icon: <AiOutlineConsoleSql />
-      },
-    ],
-    gitHubUrl: "https://github.com/Jefferson-Lima-Santos/nextJs-portfolio"
+    gitHubUrl: "https://github.com/Jefferson-Lima-Santos/portfolio-dotnet-api"
   }
 ]
 
