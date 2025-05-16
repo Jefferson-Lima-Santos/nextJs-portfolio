@@ -108,7 +108,7 @@ const projects = [
   },
   {
     name: ".NET API - For portfolio",
-    image: "https://i.ibb.co/Q322pZmV/dotnetprotecjimage.png",
+    image: "https://i.ibb.co/NhFPxQ6/projectdotnetdarkimage.png",
     languagesUsed: [
       {
         name: "C#",

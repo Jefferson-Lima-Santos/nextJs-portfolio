@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { fadeUpAnimation, techBadgeAnimation } from '@/src/utils/animations'
-import { Box, Chip, Stack, Typography, useTheme } from '@mui/material'
+import { Box, Chip, Stack, Typography, useTheme, useMediaQuery, Theme } from '@mui/material'
 import { ProjectItemType } from '@/src/types/projectType'
 
 
@@ -18,6 +18,7 @@ export const ProjectItem = (project: ProjectItemType) => {
     } = project;
 
     const theme = useTheme();
+    const smUp = useMediaQuery((theme: Theme) => theme.breakpoints.down('sm'));
 
     const allTechs = [...frameworksUsed, ...languagesUsed, ...techsUsed]
 
@@ -30,6 +31,13 @@ export const ProjectItem = (project: ProjectItemType) => {
                 transition: { duration: 0.3 },
                 cursor: 'pointer',
             }}
+            style={{
+                width: smUp ? '90%' : '500px',
+                margin: smUp ? '0 auto' : '0 1rem 1rem 0',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+            }}
             onClick={() => window.open(gitHubUrl, '_blank')}
         >
             <Box
@@ -38,21 +46,21 @@ export const ProjectItem = (project: ProjectItemType) => {
                     flexDirection: 'column',
                     justifyContent: 'center',
                     alignItems: 'center',
-                    minWidth: 'auto',
-                    maxWidth: '500px',
+                    width: smUp ? '90% !important' : '500px',
+                    height: 'auto',
+                    maxHeight: smUp ? '280px' : '500px',
                     overflow: 'hidden',
-                    borderRadius: 4,
+                    borderRadius: smUp ? 2 : 4,
                     backgroundColor: theme.palette.background.paper,
                 }}
             >
                 <Image
                     src={image}
                     alt={name}
-                    width={500}
-                    height={500}
+                    width={smUp ? 300 : 500}
+                    height={smUp ? 180 : 280}
                     style={{
                         width: '100%',
-                        height: '100%',
                         minHeight: '190px',
                         objectFit: 'cover',
                     }}
