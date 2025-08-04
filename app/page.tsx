@@ -11,6 +11,7 @@ import { TbBrandFramerMotion, TbBrandCSharp } from "react-icons/tb";
 import { AiOutlineConsoleSql } from "react-icons/ai";
 import { TbSql } from "react-icons/tb";
 import { DiDotnet } from "react-icons/di";
+import { EventsConsumer } from "@/src/components/events-consumer";
 
 const experiences = [
   {
@@ -149,6 +150,7 @@ export default function Home() {
       <Project
         projects={projects}
       />
+      <EventsConsumer />
       <Contact />
     </div>
   );
