@@ -7,8 +7,6 @@ import walkingDestination from "@/src/lottie-animations/destination-walking.json
 import { motion } from 'framer-motion';
 import { useTranslation } from "react-i18next";
 import { tokens } from "@/src/locales/tokens";
-import MUTATE_MESSAGE from "@/src/mutations/send-message";
-import { useMutation } from "@apollo/client";
 import dynamic from "next/dynamic";
 import toast from 'react-hot-toast';
 
@@ -25,7 +23,6 @@ const LottieNoSSR = dynamic(() => import("lottie-react"), {
 
 export const Contact = () => {
     const theme = useTheme();
-    const [mutateMesssage, { loading }] = useMutation(MUTATE_MESSAGE);
     const isMobile = useMediaQuery(theme.breakpoints.down("md"));
     const { t } = useTranslation();
 
@@ -42,28 +39,28 @@ export const Contact = () => {
             country: Yup.string().required(t(tokens.required.country)),
             message: Yup.string().required(t(tokens.required.message)),
         }),
-        onSubmit: (values: FormValues) => {
+        onSubmit: async (values: FormValues) => {
             const toastId = toast.loading(t(tokens.common.saving), { position: "top-right" });
-            mutateMesssage({
-                variables: {
-                    name: values.name,
-                    email: values.email,
-                    country: values.country,
-                    message: values.message,
-                },
-            }).then((response) => {
-                if (response.data) {
-                    toast.success(t(tokens.common.success), { id: toastId });
-                    formik.resetForm();
-                } else {
-                    toast.error(t(tokens.common.somethingWentWrong), { id: toastId });
+
+            try {
+                const response = await fetch("/api/contact", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(values),
+                });
+
+                if (!response.ok) {
+                    throw new Error("Failed to send contact message");
                 }
-            }).catch((error) => {
+
+                toast.success(t(tokens.common.success), { id: toastId });
+                formik.resetForm();
+            } catch (error) {
                 console.error("Error sending message:", error);
                 toast.error(t(tokens.common.somethingWentWrong), { id: toastId });
-            }).finally(() => {
-                toast.dismiss(toastId);
-            });
+            }
         },
     });
 
@@ -209,10 +206,10 @@ export const Contact = () => {
                                                     backgroundColor: theme.palette.primary.dark,
                                                 },
                                             }}
-                                            disabled={loading}
-                                            startIcon={loading ? <CircularProgress size={24} /> : null}
+                                            disabled={formik.isSubmitting}
+                                            startIcon={formik.isSubmitting ? <CircularProgress size={24} /> : null}
                                         >
-                                            {t(tokens.common.submit)}
+                                            {formik.isSubmitting ? t(tokens.common.saving) : t(tokens.common.submit)}
                                         </Button>
                                     </Stack>
                                 </form>
