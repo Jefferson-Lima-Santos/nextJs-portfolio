@@ -23,7 +23,7 @@
     "jotai": "^2.12.2",
     "lodash.isequal": "^4.5.0",
     "lottie-react": "^2.4.1",
-    "next": "15.0.4",
+    "next": "^15.0.5",
     "nodemailer": "^8.0.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
