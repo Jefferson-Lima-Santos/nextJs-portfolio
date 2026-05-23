@@ -15,7 +15,7 @@ import { DiDotnet } from "react-icons/di";
 const experiences = [
   {
     companyLogo: {
-      url: "https://media.licdn.com/dms/image/v2/C4D0BAQHqRN_t2Qx64w/company-logo_200_200/company-logo_200_200/0/1639058991800/gruposeb_logo?e=1749081600&v=beta&t=ngbxNmXpq0M1PsmGp2m_0BPtuoqJaM25_gcrsqQsR1g",
+      url: "/assets/companies/gruposeb_logo.jpeg",
       alt: "Grupo SEB Logo",
     },
     companyName: "Grupo SEB",
@@ -28,7 +28,7 @@ const experiences = [
   },
   {
     companyLogo: {
-      url: "https://media.licdn.com/dms/image/v2/C4D0BAQHqRN_t2Qx64w/company-logo_200_200/company-logo_200_200/0/1639058991800/gruposeb_logo?e=1749081600&v=beta&t=ngbxNmXpq0M1PsmGp2m_0BPtuoqJaM25_gcrsqQsR1g",
+      url: "/assets/companies/gruposeb_logo.jpeg",
       alt: "Grupo SEB Logo",
     },
     companyName: "Grupo SEB",
@@ -41,7 +41,7 @@ const experiences = [
   },
   {
     companyLogo: {
-      url: "https://media.licdn.com/dms/image/v2/D4D0BAQHPlQ_FhpCMhQ/company-logo_200_200/company-logo_200_200/0/1727963557724/safe_ti_logo?e=1749686400&v=beta&t=aB_GWfyqreJqEGAoFpAQMySC700j4njbE-Xj7LtVdxI",
+      url: "/assets/companies/safe_ti_logo.jpeg",
       alt: "SAFE-TI Logo",
     },
     companyName: "SAFE-TI",
