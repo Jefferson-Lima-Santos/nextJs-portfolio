@@ -152,6 +152,8 @@ export const createComponents = (): Components => {
           width: '100%'
         },
         body: {
+          backgroundColor: '#0a0a0a',
+          color: '#ededed',
           display: 'flex',
           flex: '1 1 auto',
           flexDirection: 'column',
