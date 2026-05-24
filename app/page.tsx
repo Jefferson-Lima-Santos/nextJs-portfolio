@@ -1,154 +1,124 @@
-import styles from "./page.module.css";
-import Author from "../src/components/author";
-import { WorkExperience } from "@/src/components/work-experience";
-import Contact from "@/src/components/contact";
-import Project from "@/src/components/projects";
-import { FaReact } from "react-icons/fa";
-import { AiOutlineDotNet } from "react-icons/ai";
-import { SiTypescript, SiGraphql, SiI18Next, SiMui, SiRedux  } from "react-icons/si";
-import { RiNextjsLine } from "react-icons/ri";
-import { TbBrandFramerMotion, TbBrandCSharp } from "react-icons/tb";
-import { AiOutlineConsoleSql } from "react-icons/ai";
-import { TbSql } from "react-icons/tb";
-import { DiDotnet } from "react-icons/di";
+'use client';
 
-const experiences = [
-  {
-    companyLogo: {
-      url: "/assets/companies/gruposeb_logo.jpeg",
-      alt: "Grupo SEB Logo",
-    },
-    companyName: "Grupo SEB",
-    companyUrl: "https://www.linkedin.com/company/gruposeb",
-    startDate: "2024-02-01",
-    endDate: "",
-    role: "Desenvolvedor Web",
-    description: `Atuo como Desenvolvedor Web no time de Operações do Grupo SEB, focado na manutenção e evolução do principal produto da empresa. Trabalho com tecnologias como Next.js, React, TypeScript e GraphQL, com foco em performance e experiência do usuário. Também realizo tarefas no Back-End com .NET (C#), entregando soluções completas e colaborando com eficiência.`,
-    technologies: ["Next.js", "React", "TypeScript", "GraphQL", ".NET", "C#"],
-  },
-  {
-    companyLogo: {
-      url: "/assets/companies/gruposeb_logo.jpeg",
-      alt: "Grupo SEB Logo",
-    },
-    companyName: "Grupo SEB",
-    companyUrl: "https://www.linkedin.com/company/gruposeb",
-    startDate: "2022-03-01",
-    endDate: "2024-02-01",
-    role: "Estagiário de Tecnologia",
-    description: `Resolvia chamados técnicos e criava soluções para facilitar integrações, como uma aplicação para manipulação de objetos JSON. Posteriormente, transitei para o time de desenvolvimento, focando em interfaces e melhorias na experiência do usuário, além de participar de demandas de back-end.`,
-    technologies: ["React", "TypeScript", "Node.js"],
-  },
-  {
-    companyLogo: {
-      url: "/assets/companies/safe_ti_logo.jpeg",
-      alt: "SAFE-TI Logo",
-    },
-    companyName: "SAFE-TI",
-    companyUrl: "https://www.linkedin.com/company/safe-ti/",
-    startDate: "2021-09-01",
-    endDate: "2022-04-01",
-    role: "Estagiário em TI",
-    description: `Resolvia problemas de redes, instalava equipamentos e realizava manutenção e gerenciamento de servidores Windows.`,
-    technologies: ["Redes", "Windows Server"],
-  },
-];
+import { useTranslation } from 'react-i18next';
+import styles from './page.module.css';
+import Author from '../src/components/author';
+import { WorkExperience } from '@/src/components/work-experience';
+import Contact from '@/src/components/contact';
+import Project from '@/src/components/projects';
+import experiences from '@/src/data/experiences.json';
+import { WorkExperienceItem } from '@/src/types/workExperienceItemType';
+import { FaReact } from 'react-icons/fa';
+import { AiOutlineDotNet, AiOutlineConsoleSql } from 'react-icons/ai';
+import { SiTypescript, SiGraphql, SiI18Next, SiMui, SiRedux } from 'react-icons/si';
+import { RiNextjsLine } from 'react-icons/ri';
+import { TbBrandFramerMotion, TbBrandCSharp, TbSql } from 'react-icons/tb';
+import { DiDotnet } from 'react-icons/di';
 
 const projects = [
   {
-    name: "Portfolio",
-    image: "https://i.ibb.co/nMn8sDcb/Portfolio.png",
+    name: 'Portfolio',
+    image: 'https://i.ibb.co/nMn8sDcb/Portfolio.png',
     languagesUsed: [
       {
-        name: "JavaScript",
+        name: 'JavaScript',
         icon: <FaReact />
-      }, 
+      },
       {
-        name: "TypeScript",
+        name: 'TypeScript',
         icon: <SiTypescript />
       }
     ],
     frameworksUsed: [
       {
-        name: "Next.js",
+        name: 'Next.js',
         icon: <RiNextjsLine />
       }
     ],
     techsUsed: [
       {
-        name: "React",
+        name: 'React',
         icon: <FaReact />
       },
       {
-        name: "Node.js",
+        name: 'Node.js',
         icon: <RiNextjsLine />
       },
       {
-        name: "GraphQL -> ApolloClient",
+        name: 'GraphQL -> ApolloClient',
         icon: <SiGraphql />
       },
       {
-        name: "Internationalization -> i18next",
+        name: 'Internationalization -> i18next',
         icon: <SiI18Next />
       },
       {
-        name: "Jotai",
+        name: 'Jotai',
         icon: <SiRedux />
       },
       {
-        name: "MUI",
+        name: 'MUI',
         icon: <SiMui />
       },
       {
-        name: "Framer Motion",
+        name: 'Framer Motion',
         icon: <TbBrandFramerMotion />
       }
     ],
-    gitHubUrl: "https://github.com/Jefferson-Lima-Santos/nextJs-portfolio"
+    gitHubUrl: 'https://github.com/Jefferson-Lima-Santos/nextJs-portfolio'
   },
   {
-    name: ".NET API - For portfolio",
-    image: "https://i.ibb.co/NhFPxQ6/projectdotnetdarkimage.png",
+    name: '.NET API - For portfolio',
+    image: 'https://i.ibb.co/NhFPxQ6/projectdotnetdarkimage.png',
     languagesUsed: [
       {
-        name: "C#",
+        name: 'C#',
         icon: <TbBrandCSharp />
       },
       {
-        name: "SQL",
+        name: 'SQL',
         icon: <TbSql />
       }
     ],
     frameworksUsed: [
       {
-        name: ".NET",
+        name: '.NET',
         icon: <AiOutlineDotNet />
       }
     ],
     techsUsed: [
       {
-        name: "Entity Framework",
+        name: 'Entity Framework',
         icon: <DiDotnet />
       },
       {
-        name: "SQL Server",
+        name: 'SQL Server',
         icon: <AiOutlineConsoleSql />
-      },
+      }
     ],
-    gitHubUrl: "https://github.com/Jefferson-Lima-Santos/portfolio-dotnet-api"
+    gitHubUrl: 'https://github.com/Jefferson-Lima-Santos/portfolio-dotnet-api'
   }
-]
+];
+
+type SupportedLanguage = keyof typeof experiences;
+
+const getExperiencesByLanguage = (language: string): WorkExperienceItem[] => {
+  if (language === 'en') {
+    return experiences.en as WorkExperienceItem[];
+  }
+
+  return experiences.ptBR as WorkExperienceItem[];
+};
 
 export default function Home() {
+  const { i18n } = useTranslation();
+  const localizedExperiences = getExperiencesByLanguage(i18n.language as SupportedLanguage);
+
   return (
     <div className={styles.page}>
       <Author />
-      <WorkExperience
-        experiences={experiences}
-      />
-      <Project
-        projects={projects}
-      />
+      <WorkExperience experiences={localizedExperiences} />
+      <Project projects={projects} />
       <Contact />
     </div>
   );

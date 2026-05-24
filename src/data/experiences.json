@@ -1,0 +1,174 @@
+{
+  "ptBR": [
+    {
+      "companyLogo": {
+        "url": "/assets/companies/gruposeb_logo.jpeg",
+        "alt": "Logo do Grupo SEB"
+      },
+      "companyName": "Grupo SEB",
+      "companyUrl": "https://www.linkedin.com/company/gruposeb",
+      "startDate": "2025-11-01",
+      "role": "Desenvolvedor",
+      "description": "<p>Atuo no Grupo SEB com foco no desenvolvimento de novas soluções, evolução de produtos e integração entre sistemas internos e externos. Trabalho no desenvolvimento e manutenção de aplicações utilizando tecnologias como Next.js, React, TypeScript, GraphQL, Node.js e .NET (C#).</p><p>Minha atuação é full stack, participando do desenvolvimento front-end e back-end, além da implementação de arquiteturas e soluções modernas, como comunicação assíncrona com filas e tópicos (Service Bus, RabbitMQ), Azure Functions, WebSockets, WebPush e padrões como Saga para orquestração de processos distribuídos.</p><p>Atualmente, atuo no desenvolvimento e implementação de soluções relacionadas ao ecossistema PIX com participação em integrações bancárias e processos financeiros, desenvolvimento de fluxos de pagamento, integração entre sistemas e automações voltadas às operações financeiras.</p><p>Além da atuação técnica, também participo ativamente do direcionamento das entregas e do apoio ao time por meio de revisão de pull requests, apoio técnico a outros desenvolvedores, participação em reuniões estratégicas e suporte em temas de negócio, integrações e arquitetura.</p><p>Ao longo da minha trajetória na empresa, passei por diferentes frentes, incluindo Portais, Operações, Experiência & Integração e Financeiro, o que me proporcionou uma visão ampla dos sistemas internos e uma atuação transversal no apoio a outras equipes.</p>",
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "GraphQL",
+        "Node.js",
+        ".NET",
+        "C#",
+        "Azure Service Bus",
+        "RabbitMQ",
+        "Azure Functions",
+        "WebSockets",
+        "WebPush",
+        "Saga",
+        "PIX"
+      ]
+    },
+    {
+      "companyLogo": {
+        "url": "/assets/companies/gruposeb_logo.jpeg",
+        "alt": "Logo do Grupo SEB"
+      },
+      "companyName": "Grupo SEB",
+      "companyUrl": "https://www.linkedin.com/company/gruposeb",
+      "startDate": "2024-02-01",
+      "endDate": "2025-11-01",
+      "role": "Analista e Desenvolvedor de Sistemas",
+      "description": "<p>Atuei como Desenvolvedor Web no time de Operações do Grupo SEB, equipe responsável pela manutenção e evolução do principal produto da empresa.</p><p>Minha atuação envolveu desenvolvimento e manutenção de produtos com Next.js, React, TypeScript, GraphQL e .NET (C#), além de colaboração com outras equipes em análises técnicas, revisão de código, integração de sistemas e implementação de funcionalidades com impacto direto na experiência do usuário e na eficiência dos processos internos.</p><p>Também apliquei SEO em páginas existentes e novas, participei dos principais times de desenvolvimento da empresa e apoiei outros times com dúvidas sobre sistemas, regras de negócio e demandas técnicas pontuais.</p>",
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "GraphQL",
+        ".NET",
+        "C#",
+        "SEO"
+      ]
+    },
+    {
+      "companyLogo": {
+        "url": "/assets/companies/gruposeb_logo.jpeg",
+        "alt": "Logo do Grupo SEB"
+      },
+      "companyName": "Grupo SEB",
+      "companyUrl": "https://www.linkedin.com/company/gruposeb",
+      "startDate": "2022-03-01",
+      "endDate": "2024-02-01",
+      "role": "Estagiário de Tecnologia",
+      "description": "<p>Fui responsável por solucionar problemas e atender demandas nos principais sistemas da empresa, garantindo a continuidade das operações e a satisfação dos usuários.</p><p>Identifiquei e criei uma aplicação para manipulação de objetos JSON, facilitando integrações de processos para o time de suporte e reduzindo o tempo de atuação nos chamados.</p><p>Recebi reconhecimento pelo desempenho no suporte técnico e fiz a transição para a área de desenvolvimento ainda durante o estágio, com foco em interfaces, melhorias de usabilidade, experiência do usuário e participação em demandas de back-end.</p>",
+      "technologies": [
+        "JSON",
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Support"
+      ]
+    },
+    {
+      "companyLogo": {
+        "url": "/assets/companies/safe_ti_logo.jpeg",
+        "alt": "Logo da SAFE TI"
+      },
+      "companyName": "SAFE TI",
+      "companyUrl": "https://www.linkedin.com/company/safe-ti/",
+      "startDate": "2021-09-01",
+      "endDate": "2022-04-01",
+      "role": "Estágio em TI",
+      "description": "<p>Atuei na resolução de problemas relacionados a redes, instalação de equipamentos de terceiros e manutenção preventiva de infraestrutura.</p><p>Também participei do gerenciamento de servidores Windows, apoiando a estabilidade e a operação do ambiente de TI.</p>",
+      "technologies": [
+        "Redes",
+        "Windows Server",
+        "Infraestrutura"
+      ]
+    }
+  ],
+  "en": [
+    {
+      "companyLogo": {
+        "url": "/assets/companies/gruposeb_logo.jpeg",
+        "alt": "Grupo SEB logo"
+      },
+      "companyName": "Grupo SEB",
+      "companyUrl": "https://www.linkedin.com/company/gruposeb",
+      "startDate": "2025-11-01",
+      "role": "Software Developer",
+      "description": "<p>I work at Grupo SEB focusing on new solutions, product evolution, and integrations between internal and external systems. I develop and maintain applications using Next.js, React, TypeScript, GraphQL, Node.js, and .NET (C#).</p><p>My role is full stack, covering both front-end and back-end development as well as modern architecture and solution design, including asynchronous communication with queues and topics (Service Bus, RabbitMQ), Azure Functions, WebSockets, WebPush, and the Saga pattern for distributed process orchestration.</p><p>Currently, I contribute to solutions related to the PIX ecosystem, including banking integrations, financial processes, payment flows, system integrations, and automations for financial operations.</p><p>Beyond hands-on development, I also help guide deliveries and support the team through pull request reviews, technical guidance for other developers, participation in strategic meetings, and support on business rules, integrations, and system architecture.</p><p>Throughout my time at the company, I have worked across several areas, including Portals, Operations, Experience & Integration, and Finance, which gave me a broad view of internal systems and enabled cross-team technical support.</p>",
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "GraphQL",
+        "Node.js",
+        ".NET",
+        "C#",
+        "Azure Service Bus",
+        "RabbitMQ",
+        "Azure Functions",
+        "WebSockets",
+        "WebPush",
+        "Saga",
+        "PIX"
+      ]
+    },
+    {
+      "companyLogo": {
+        "url": "/assets/companies/gruposeb_logo.jpeg",
+        "alt": "Grupo SEB logo"
+      },
+      "companyName": "Grupo SEB",
+      "companyUrl": "https://www.linkedin.com/company/gruposeb",
+      "startDate": "2024-02-01",
+      "endDate": "2025-11-01",
+      "role": "Systems Analyst and Developer",
+      "description": "<p>I worked as a Web Developer in Grupo SEB's Operations team, which is responsible for maintaining and evolving the company's main product.</p><p>My work included developing and maintaining products with Next.js, React, TypeScript, GraphQL, and .NET (C#), while collaborating with other teams on technical analysis, code review, system integration, and the implementation of features that directly impacted user experience and internal efficiency.</p><p>I also applied SEO to existing and new pages, contributed across the company's main development teams, and supported other teams with questions about systems, business rules, and occasional technical demands.</p>",
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "GraphQL",
+        ".NET",
+        "C#",
+        "SEO"
+      ]
+    },
+    {
+      "companyLogo": {
+        "url": "/assets/companies/gruposeb_logo.jpeg",
+        "alt": "Grupo SEB logo"
+      },
+      "companyName": "Grupo SEB",
+      "companyUrl": "https://www.linkedin.com/company/gruposeb",
+      "startDate": "2022-03-01",
+      "endDate": "2024-02-01",
+      "role": "Technology Intern",
+      "description": "<p>I was responsible for solving issues and handling requests in the company's main systems, helping ensure operational continuity and user satisfaction.</p><p>I identified an opportunity and built an application to manipulate JSON objects, making process integrations easier for the support team and reducing response time on tickets.</p><p>After being recognized for my support performance, I transitioned into the development area during the internship, focusing on interfaces, usability improvements, user experience, and back-end tasks.</p>",
+      "technologies": [
+        "JSON",
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Support"
+      ]
+    },
+    {
+      "companyLogo": {
+        "url": "/assets/companies/safe_ti_logo.jpeg",
+        "alt": "SAFE TI logo"
+      },
+      "companyName": "SAFE TI",
+      "companyUrl": "https://www.linkedin.com/company/safe-ti/",
+      "startDate": "2021-09-01",
+      "endDate": "2022-04-01",
+      "role": "IT Intern",
+      "description": "<p>I worked on network troubleshooting, third-party equipment installation, and preventive infrastructure maintenance.</p><p>I also helped manage Windows servers, supporting the stability and day-to-day operation of the IT environment.</p>",
+      "technologies": [
+        "Networking",
+        "Windows Server",
+        "Infrastructure"
+      ]
+    }
+  ]
+}

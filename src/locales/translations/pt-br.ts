@@ -36,6 +36,8 @@ export const ptBR = {
   [tokens.common.success]: 'Sucesso!',
   [tokens.common.somethingWentWrong]: 'Algo deu errado. Tente novamente mais tarde.',
   [tokens.common.searchPlaceHolder]: 'Pesquisar...',
+  [tokens.common.technologiesUsed]: 'Tecnologias utilizadas',
+  [tokens.common.present]: 'O momento',
   [tokens.author.description]: '<p style="color: gray;">Sou um desenvolvedor fullstack com experiência em JavaScript, TypeScript e C#. Com mais de <span style="font-weight: bold">3 anos de experiência</span> em desenvolvimento web, front-end e back-end(Com foco no FrontEnd). Estou sempre buscando aprender novas tecnologias e melhorar minhas habilidades.</p>',
   [tokens.page.notAuthorized.title]: '401: Autorização necessária',
   [tokens.page.notAuthorized.subtitle]: 'Você tentou algum caminho obscuro ou veio aqui por engano. Seja o que for, tente usar a navegação.',

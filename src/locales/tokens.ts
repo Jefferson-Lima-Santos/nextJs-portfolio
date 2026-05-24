@@ -35,6 +35,8 @@ export const tokens = {
     success: 'common.success',
     somethingWentWrong: 'common.somethingWentWrong',
     searchPlaceHolder: 'common.searchPlaceHolder',
+    technologiesUsed: 'common.technologiesUsed',
+    present: 'common.present',
   },
   invalid: {
     email: 'invalid.email',
